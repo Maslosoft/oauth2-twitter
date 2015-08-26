@@ -1,0 +1,26 @@
+{
+    "name": "maslosoft/oauth2-twitter",
+    "description": "Twitter OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+    "require": {
+        "league/oauth2-client": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Peter Maselkowski",
+            "email": "pmaselkowski@gmail.com"
+        }
+    ],
+    "keywords": [
+        "oauth",
+        "oauth2",
+        "client",
+        "authorization",
+        "authentication",
+        "twitter"
+    ],
+    "autoload": {
+        "psr-4": {
+            "League\\OAuth2\\Client\\": "src/"
+        }
+    }
+}
