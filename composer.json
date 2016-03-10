@@ -1,26 +1,43 @@
 {
-    "name": "maslosoft/oauth2-twitter",
-    "description": "Twitter OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
-    "require": {
-        "league/oauth2-client": "^1.0"
-    },
-    "authors": [
-        {
-            "name": "Peter Maselkowski",
-            "email": "pmaselkowski@gmail.com"
-        }
-    ],
-    "keywords": [
-        "oauth",
-        "oauth2",
-        "client",
-        "authorization",
-        "authentication",
-        "twitter"
-    ],
-    "autoload": {
-        "psr-4": {
-            "League\\OAuth2\\Client\\": "src/"
-        }
-    }
+	"name": "maslosoft/oauth2-twitter",
+	"description": "Twitter OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Peter Maselkowski",
+			"email": "pmaselkowski@gmail.com",
+			"homepage": "https://maslosoft.com/"
+		}
+	],
+	"keywords": [
+		"oauth",
+		"oauth2",
+		"client",
+		"authorization",
+		"authentication",
+		"twitter"
+	],
+	"require": {
+		"league/oauth2-client": "^1.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "~4.0",
+		"mockery/mockery": "~0.9",
+		"squizlabs/php_codesniffer": "~2.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"League\\OAuth2\\Client\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"League\\OAuth2\\Client\\Test\\": "test/src/"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		}
+	}
 }
